@@ -154,7 +154,7 @@ class Backend():
 
         hostsFile = open(self.HostsFile, "a")
 
-        hostsFile.write("\n# PySelfControl Blocklist. NO NOT EDIT OR MODIFY THE CONTENTS OF THIS\n")
+        hostsFile.write("\n# PySelfControl Blocklist. DO NOT EDIT OR MODIFY THE CONTENTS OF THIS\n")
         hostsFile.write("# PySelfControl will remove the block when the timer has ended\n")
         hostsFile.write('# Block the following sites:\n')
 
@@ -202,7 +202,7 @@ class Backend():
         f = open(self.HostsFile, "r")  # Open File
 
         for line in f:
-            if line == "# PySelfControl Blocklist. NO NOT EDIT OR MODIFY THE CONTENTS OF THIS\n":
+            if line == "# PySelfControl Blocklist. DO NOT EDIT OR MODIFY THE CONTENTS OF THIS\n":
                 ignore = True
             if ignore == False:
                 restoreContents.append(line)
